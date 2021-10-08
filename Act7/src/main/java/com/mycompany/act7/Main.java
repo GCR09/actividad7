@@ -10,16 +10,15 @@ import java.io.InputStreamReader;
 public class Main {
     public static BufferedReader entrada =new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) throws IOException{
-        int cantidad;
-        int sucesiones;
+        Metodos dato = new Metodos();
         System.out.println("Escribe la cantidad de numeros primos que "
                 + "quieres que se calculen:");
-        cantidad=Integer.parseInt(entrada.readLine());
-        Metodos.numerosPrimos(cantidad);
+        dato.numero=Integer.parseInt(entrada.readLine());
+        Metodos.numerosPrimos(dato.numero);
         
         System.out.println("Escribe el número de sucesiones que "
                 + "quieres visualizar:");
-        sucesiones=Integer.parseInt(entrada.readLine());
-        Metodos.sucesionFibonacci(sucesiones);
+        dato.numero=Integer.parseInt(entrada.readLine());
+        Metodos.sucesionFibonacci(dato.numero);
     }
 }
